@@ -182,7 +182,7 @@ p, li, div.stMarkdown, .markdown-text-container {
 """, unsafe_allow_html=True)
 
 # ---------- IMAGEM DO HERO ----------
-file = "talisma-construtora/imagens_site/imagem02.jpg"
+file = "imagens_site/imagem02.jpg"
 with open(file, "rb") as f:
     encoded = base64.b64encode(f.read()).decode()
 
