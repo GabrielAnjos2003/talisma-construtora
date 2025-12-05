@@ -177,7 +177,7 @@ p, li, div.stMarkdown, .markdown-text-container {
 
 
 # ---------- IMAGEM DO HERO (CORRIGIDO) ----------
-file = "imagens_site/Imagem01.jpg"
+file = "imagens_site/imagem01.jpg"
 with open(file, "rb") as f:
     encoded = base64.b64encode(f.read()).decode()
 
@@ -493,21 +493,21 @@ st.markdown('<p class="big-title-custom">Portfólio</p>', unsafe_allow_html=True
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("imagens_site/Imagem01.jpg")
+    st.image("imagens_site/imagem01.jpg")
     st.write("**Obra 1 – Execução de drenagem**")
 
 with col2:
-    st.image("imagens_site/Imagem02.jpg")
+    st.image("imagens_site/imagem02.jpg")
     st.write("**Obra 2 – Galeria celular**")
 
 col3, col4 = st.columns(2)
 
 with col3:
-    st.image("imagens_site/Imagem03.jpg")
+    st.image("imagens_site/imagem03.jpg")
     st.write("**Obra 3 – Manilhas**")
 
 with col4:
-    st.image("imagens_site/Imagem04.jpg")
+    st.image("imagens_site/imagem04.jpg")
     st.write("**Obra 4 – Travessia estrutural**")
 
 
