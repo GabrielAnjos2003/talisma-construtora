@@ -3,7 +3,7 @@ import base64
 
 # ---------- CONFIGURAÇÕES DO SITE ----------
 st.set_page_config(
-    page_title="Construtora Talismã ",
+    page_title="Construtora Talismã",
     page_icon="💎",
     layout="wide"
 )
@@ -23,8 +23,8 @@ st.markdown("""
 
 .top-menu {
     width: 100%;
-    background: rgba(0,63,92,0.85);   /* 🔥 fundo translúcido */
-    backdrop-filter: blur(6px);       /* 🔥 efeito vidro */
+    background: rgba(0,63,92,0.85);
+    backdrop-filter: blur(6px);
     padding: 18px 0;
     position: fixed;
     top: 0;
@@ -48,9 +48,7 @@ st.markdown("""
     transition: 0.3s;
 }
 
-body {
-    padding-top: 90px !important;
-}
+body { padding-top: 90px !important; }
 
 </style>
 
@@ -67,10 +65,9 @@ body {
 st.markdown("""
 <style>
 html, body, [class*="block-container"] {
-    background: linear-gradient(135deg, #4184e1 0%, #FFFFFF 100%) !important;   
+    background: linear-gradient(135deg, #4184e1 0%, #FFFFFF 100%) !important;
     background-attachment: fixed;
 }
-
 .main { background: none; }
 </style>
 """, unsafe_allow_html=True)
@@ -79,11 +76,8 @@ html, body, [class*="block-container"] {
 st.markdown("""
 <style>
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-}
+body { font-family: 'Segoe UI', sans-serif; }
 
-/* 🔥 AUMENTAR APENAS TEXTOS COMUNS */
 p, li, div.stMarkdown, .markdown-text-container {
     font-size: 22px !important;
     line-height: 1.55 !important;
@@ -118,7 +112,7 @@ p, li, div.stMarkdown, .markdown-text-container {
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
-}            
+}
 
 .hero-title { font-size: 80px; font-weight: bold; }
 .hero-subtitle { font-size: 25px; margin-top: 10px; }
@@ -181,8 +175,9 @@ p, li, div.stMarkdown, .markdown-text-container {
 </style>
 """, unsafe_allow_html=True)
 
-# ---------- IMAGEM DO HERO ----------
-file = "imagens_site\imagem01.jpg"
+
+# ---------- IMAGEM DO HERO (CORRIGIDO) ----------
+file = "imagens_site/Imagem01.jpg"
 with open(file, "rb") as f:
     encoded = base64.b64encode(f.read()).decode()
 
@@ -194,13 +189,12 @@ st.markdown(f"""
 </style>
 """, unsafe_allow_html=True)
 
+
 # ======================================================================
 # =============================== INÍCIO ================================
 # ======================================================================
 
 st.markdown("<h1 id='inicio'></h1>", unsafe_allow_html=True)
-
-
 
 st.markdown("""
 <div class="hero-section">
@@ -216,11 +210,15 @@ st.markdown('<p class="big-title-custom">Nossos Diferenciais</p>', unsafe_allow_
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.markdown("""<div class="card"><h4>🏗️ Obras de Artes Especiais</h4>Construção de pontes, galerias e estruturas.</div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="card"><h4>🏗️ Obras de Artes Especiais</h4>Construção de pontes, galerias e estruturas.</div>""",
+                unsafe_allow_html=True)
 with col2:
-    st.markdown("""<div class="card"><h4>🌧️ Drenagem Urbana</h4>Instalação de manilhas, valetas e dissipadores.</div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="card"><h4>🌧️ Drenagem Urbana</h4>Instalação de manilhas, valetas e dissipadores.</div>""",
+                unsafe_allow_html=True)
 with col3:
-    st.markdown("""<div class="card"><h4>👷 Execução Profissional</h4>Equipes experientes e controle rigoroso.</div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="card"><h4>👷 Execução Profissional</h4>Equipes experientes e controle rigoroso.</div>""",
+                unsafe_allow_html=True)
+
 
 # ======================================================================
 # =========================== QUEM SOMOS ===============================
@@ -303,7 +301,7 @@ st.markdown("""
     <h1 style="color:#003F5C; font-size:40px; font-weight:900;">
         Qualidade e credibilidade <span style="color:#d11f3e;">comprovadas em números.</span>
     </h1>
-
+</div>
 """, unsafe_allow_html=True)
 
 st.markdown("""
@@ -317,20 +315,15 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-
-
 # ---------------------------- CARTÕES ------------------------------
 
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
     st.markdown("""
-    <div style="
-        background:white; padding:25px; border-radius:12px; text-align:center;
-        box-shadow:0px 4px 10px rgba(0,0,0,0.15);
-    ">
-        <img src="https://cdn-icons-png.flaticon.com/512/709/709790.png"
-             width="70">
+    <div style="background:white; padding:25px; border-radius:12px; text-align:center;
+        box-shadow:0px 4px 10px rgba(0,0,0,0.15);">
+        <img src="https://cdn-icons-png.flaticon.com/512/709/709790.png" width="70">
         <h3 style="color:#d11f3e; font-size:34px;">14 anos</h3>
         <p style="font-size:18px;">realizando sonhos</p>
     </div>
@@ -338,12 +331,9 @@ with col1:
 
 with col2:
     st.markdown("""
-    <div style="
-        background:white; padding:25px; border-radius:12px; text-align:center;
-        box-shadow:0px 4px 10px rgba(0,0,0,0.15);
-    ">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828673.png"
-             width="70">
+    <div style="background:white; padding:25px; border-radius:12px; text-align:center;
+        box-shadow:0px 4px 10px rgba(0,0,0,0.15);">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828673.png" width="70">
         <h3 style="color:#d11f3e; font-size:34px;"> + Mil </h3>
         <p style="font-size:18px;">Obras realizadas</p>
     </div>
@@ -351,43 +341,33 @@ with col2:
 
 with col3:
     st.markdown("""
-    <div style="
-        background:white; padding:25px; border-radius:12px; text-align:center;
-        box-shadow:0px 4px 10px rgba(0,0,0,0.15);
-    ">
-        <img src="https://cdn-icons-png.flaticon.com/512/854/854866.png"
-             width="70">
-        <h3 style="color:#d11f3e; font-size:34px;"> Catalão</h3>
+    <div style="background:white; padding:25px; border-radius:12px; text-align:center;
+        box-shadow:0px 4px 10px rgba(0,0,0,0.15);">
+        <img src="https://cdn-icons-png.flaticon.com/512/854/854866.png" width="70">
+        <h3 style="color:#d11f3e; font-size:34px;"> Catalão </h3>
         <p style="font-size:18px;">Catalão e região</p>
     </div>
     """, unsafe_allow_html=True)
 
 with col4:
     st.markdown("""
-    <div style="
-        background:white; padding:25px; border-radius:12px; text-align:center;
-        box-shadow:0px 4px 10px rgba(0,0,0,0.15);
-    ">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
-             width="70">
-        <h3 style="color:#d11f3e; font-size:34px;"> + 1,5 mil</h3>
+    <div style="background:white; padding:25px; border-radius:12px; text-align:center;
+        box-shadow:0px 4px 10px rgba(0,0,0,0.15);">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="70">
+        <h3 style="color:#d11f3e; font-size:34px;"> + 1,5 mil </h3>
         <p style="font-size:18px;">m² construídos</p>
     </div>
     """, unsafe_allow_html=True)
 
 with col5:
     st.markdown("""
-    <div style="
-        background:white; padding:25px; border-radius:12px; text-align:center;
-        box-shadow:0px 4px 10px rgba(0,0,0,0.15);
-    ">
-        <img src="https://cdn-icons-png.flaticon.com/512/709/709722.png"
-             width="70">
-        <h3 style="color:#d11f3e; font-size:34px;"> + 100</h3>
+    <div style="background:white; padding:25px; border-radius:12px; text-align:center;
+        box-shadow:0px 4px 10px rgba(0,0,0,0.15);">
+        <img src="https://cdn-icons-png.flaticon.com/512/709/709722.png" width="70">
+        <h3 style="color:#d11f3e; font-size:34px;"> + 100 </h3>
         <p style="font-size:18px;">Colaboradores</p>
     </div>
     """, unsafe_allow_html=True)
-
 
 
 # ======================================================================
@@ -397,7 +377,6 @@ with col5:
 st.markdown("<h1 id='servicos'></h1>", unsafe_allow_html=True)
 st.markdown('<p class="big-title-custom">Serviços</p>', unsafe_allow_html=True)
 
-# ---------- CSS atualizado ----------
 st.markdown("""
 <style>
 .servico-card {
@@ -428,7 +407,6 @@ st.markdown("""
     margin-bottom: 12px;
 }
 
-/* 🔥 Alinha itens à esquerda */
 .servico-lista {
     font-size: 19px;
     line-height: 1.55;
@@ -436,15 +414,11 @@ st.markdown("""
     margin-left: 20%;
 }
 
-.espaco-linha {
-    margin-top: 40px;
-}
+.espaco-linha { margin-top: 40px; }
 </style>
 """, unsafe_allow_html=True)
 
-
-# ------------------------ PRIMEIRA LINHA ------------------------------
-
+# PRIMEIRA LINHA
 col1, col2 = st.columns(2)
 
 with col1:
@@ -475,13 +449,9 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
-
-# ------------------------ ESPAÇO ENTRE LINHAS ------------------------------
 st.markdown("<div class='espaco-linha'></div>", unsafe_allow_html=True)
 
-
-# ------------------------ SEGUNDA LINHA ------------------------------
-
+# SEGUNDA LINHA
 col3, col4 = st.columns(2)
 
 with col3:
@@ -512,6 +482,7 @@ with col4:
     </div>
     """, unsafe_allow_html=True)
 
+
 # ======================================================================
 # ============================ PORTFÓLIO ===============================
 # ======================================================================
@@ -520,20 +491,25 @@ st.markdown("<h1 id='portfolio'></h1>", unsafe_allow_html=True)
 st.markdown('<p class="big-title-custom">Portfólio</p>', unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
+
 with col1:
-    st.image("imagens_site/imagem01.jpg")
+    st.image("imagens_site/Imagem01.jpg")
     st.write("**Obra 1 – Execução de drenagem**")
+
 with col2:
-    st.image("imagens_site/imagem03.jpg")
+    st.image("imagens_site/Imagem02.jpg")
     st.write("**Obra 2 – Galeria celular**")
 
 col3, col4 = st.columns(2)
+
 with col3:
-    st.image("imagem05.jpg")
+    st.image("imagens_site/Imagem03.jpg")
     st.write("**Obra 3 – Manilhas**")
+
 with col4:
-    st.image("imagem06.jpg")
+    st.image("imagens_site/Imagem04.jpg")
     st.write("**Obra 4 – Travessia estrutural**")
+
 
 # ======================================================================
 # ============================ CONTATO ================================
@@ -561,7 +537,10 @@ with st.form("form_contato"):
             link = f"https://wa.me/5564984266591?text={texto}"
 
             st.success("Clique abaixo para enviar pelo WhatsApp:")
-            st.markdown(f"<a href='{link}' target='_blank' class='hero-button'>Enviar pelo WhatsApp</a>", unsafe_allow_html=True)
+            st.markdown(
+                f"<a href='{link}' target='_blank' class='hero-button'>Enviar pelo WhatsApp</a>",
+                unsafe_allow_html=True
+            )
         else:
             st.error("Preencha nome e mensagem.")
 
@@ -569,6 +548,7 @@ st.write("---")
 st.write("📱 **WhatsApp:** (64) 9 8426-6591")
 st.write("📧 **E-mail:** fernandomar.borges@gmail.com")
 st.write("📍 **Endereço:** Avenida Anhanguera, 1201 – Vila União, Catalão – GO")
+
 
 # ======================================================================
 # ============================= FOOTER ================================
@@ -579,6 +559,7 @@ st.markdown("""
 © 2025 Construtora Talismã — Todos os direitos reservados.
 </div>
 """, unsafe_allow_html=True)
+
 
 # ======================================================================
 # ======================= BOTÕES FLUTUANTES ===========================
