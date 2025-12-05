@@ -331,7 +331,7 @@ with col1:
     ">
         <img src="https://cdn-icons-png.flaticon.com/512/709/709790.png"
              width="70">
-        <h3 style="color:#d11f3e; font-size:34px;">43 anos</h3>
+        <h3 style="color:#d11f3e; font-size:34px;">14 anos</h3>
         <p style="font-size:18px;">realizando sonhos</p>
     </div>
     """, unsafe_allow_html=True)
@@ -344,8 +344,8 @@ with col2:
     ">
         <img src="https://cdn-icons-png.flaticon.com/512/1828/1828673.png"
              width="70">
-        <h3 style="color:#d11f3e; font-size:34px;">25 mil</h3>
-        <p style="font-size:18px;">lares entregues</p>
+        <h3 style="color:#d11f3e; font-size:34px;"> + Mil </h3>
+        <p style="font-size:18px;">Obras realizadas</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -357,8 +357,8 @@ with col3:
     ">
         <img src="https://cdn-icons-png.flaticon.com/512/854/854866.png"
              width="70">
-        <h3 style="color:#d11f3e; font-size:34px;">5 estados</h3>
-        <p style="font-size:18px;">presença nacional</p>
+        <h3 style="color:#d11f3e; font-size:34px;"> Catalão</h3>
+        <p style="font-size:18px;">Catalão e região</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -370,7 +370,7 @@ with col4:
     ">
         <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
              width="70">
-        <h3 style="color:#d11f3e; font-size:34px;">1 milhão</h3>
+        <h3 style="color:#d11f3e; font-size:34px;"> + 1,5 mil</h3>
         <p style="font-size:18px;">m² construídos</p>
     </div>
     """, unsafe_allow_html=True)
@@ -383,8 +383,8 @@ with col5:
     ">
         <img src="https://cdn-icons-png.flaticon.com/512/709/709722.png"
              width="70">
-        <h3 style="color:#d11f3e; font-size:34px;">3 mil</h3>
-        <p style="font-size:18px;">colaboradores</p>
+        <h3 style="color:#d11f3e; font-size:34px;"> + 100</h3>
+        <p style="font-size:18px;">Colaboradores</p>
     </div>
     """, unsafe_allow_html=True)
 
