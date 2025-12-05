@@ -521,18 +521,18 @@ st.markdown('<p class="big-title-custom">Portfólio</p>', unsafe_allow_html=True
 
 col1, col2 = st.columns(2)
 with col1:
-    st.image("talisma-construtora\imagens_site\imagem01.jpg")
+    st.image("talisma-construtora/imagens_site/imagem01.jpg")
     st.write("**Obra 1 – Execução de drenagem**")
 with col2:
-    st.image("talisma-construtora\imagens_site\imagem02.jpg")
+    st.image("talisma-construtora/imagens_site/imagem02.jpg")
     st.write("**Obra 2 – Galeria celular**")
 
 col3, col4 = st.columns(2)
 with col3:
-    st.image("talisma-construtora\imagens_site\imagem03.jpg")
+    st.image("talisma-construtora/imagens_site/imagem03.jpg")
     st.write("**Obra 3 – Manilhas**")
 with col4:
-    st.image("talisma-construtora\imagens_site\imagem04.jpg")
+    st.image("talisma-construtora/imagens_site/imagem04.jpg")
     st.write("**Obra 4 – Travessia estrutural**")
 
 # ======================================================================
