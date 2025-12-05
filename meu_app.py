@@ -182,7 +182,7 @@ p, li, div.stMarkdown, .markdown-text-container {
 """, unsafe_allow_html=True)
 
 # ---------- IMAGEM DO HERO ----------
-file = "talisma-construtora/imagens_site/imagem02.jpg"
+file = "talisma-construtora\imagens_site\imagem01.jpg"
 with open(file, "rb") as f:
     encoded = base64.b64encode(f.read()).decode()
 
@@ -524,15 +524,15 @@ with col1:
     st.image("talisma-construtora/imagens_site/imagem01.jpg")
     st.write("**Obra 1 – Execução de drenagem**")
 with col2:
-    st.image("talisma-construtora/imagens_site/imagem02.jpg")
+    st.image("talisma-construtora/imagens_site/imagem01.jpg")
     st.write("**Obra 2 – Galeria celular**")
 
 col3, col4 = st.columns(2)
 with col3:
-    st.image("talisma-construtora/imagens_site/imagem02.jpg")
+    st.image("talisma-construtora/imagens_site/imagem01.jpg")
     st.write("**Obra 3 – Manilhas**")
 with col4:
-    st.image("talisma-construtora/imagens_site/imagem04.jpg")
+    st.image("talisma-construtora/imagens_site/imagem01.jpg")
     st.write("**Obra 4 – Travessia estrutural**")
 
 # ======================================================================
